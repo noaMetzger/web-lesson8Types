@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <input type="text" id="num1">
     <input type="text" id="num2">
     <button onclick="resultPlus()">+</button>
@@ -18,5 +19,24 @@
     <input type="text" id="pass" placeholder="enter password">
     <button onclick="save()">save</button>
 
+
+    <p id="delete"></p>
+    <br><br>
+    <input type="text" id="price" onblur="savePrice()" placeholder="enter price">
+    <input type="text" id="calories" onblur="filterCal()" placeholder="enter calories">
+
+    <select onchange="saveMessage(event)">
+        <option>info</option>
+        <option>warning</option>
+        <option>error</option>
+    </select>
+    <input type="text" id="title">
+    <input type="text" id="body">
+    <button onclick="sub()">ok</button>
+
+    <div id="m"></div>
+
+    
+    <script src="./page.js"></script>
 </body>
 </html>
